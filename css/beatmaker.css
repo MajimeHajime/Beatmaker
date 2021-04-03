@@ -1,0 +1,89 @@
+body {
+  animation: pulsing 10s infinite ease-in-out;
+}
+@keyframes pulsing {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: rgb(56, 31, 38);
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.beat-maker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+}
+.tracks {
+  background-color: black;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(210, 115, 138);
+  padding: 1rem;
+}
+.pad {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid rgb(210, 115, 138);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.pad.active {
+  outline: 2px dashed white;
+  border-color: white;
+  filter: drop-shadow(0px 0px 0.5rem rgb(210, 115, 138));
+}
+
+.control {
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.slider {
+  width: 70%;
+}
+
+.controlB {
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.sequence {
+  justify-content: flex-end;
+  width: 70%;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes startMusician {
+  0% {
+  }
+  5% {
+    background-color: white;
+    filter: drop-shadow(0px 0rem 1rem rgb(210, 115, 139));
+    border-color: white;
+  }
+  25% {
+    background-color: white;
+    filter: drop-shadow(0px 0rem 1rem rgb(210, 115, 139));
+    border-color: white;
+  }
+  100% {
+    filter: drop-shadow(0px 0rem 1rem rgba(210, 115, 139, 0));
+  }
+}

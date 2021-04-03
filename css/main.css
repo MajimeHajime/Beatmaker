@@ -1,0 +1,52 @@
+/* allkindathingsdefined */
+
+body {
+  margin: 10px 50px;
+  color: rgb(210, 115, 138);
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  background-color: transparent;
+  color: rgb(210, 115, 138);
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid rgb(210, 115, 138);
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+button:hover {
+  color: white;
+  filter: drop-shadow(0px 2px 3px rgba(210, 115, 138, 100%));
+}
+button:focus {
+  outline: none;
+  border-color: white;
+}
+button:active {
+  filter: drop-shadow(0px 2px 3px white);
+  color: white;
+  border-color: white;
+  outline: none;
+}
+select {
+  background-color: transparent;
+  color: rgb(210, 115, 138);
+  border: 1px solid rgb(210, 115, 138);
+  border-radius: 0px;
+}
+
+/* allkindathingsanimated */
+@keyframes wavy {
+  0% {
+    color: rgb(210, 115, 138);
+    filter: drop-shadow(0px -4px 10px rgba(210, 115, 138, 0%));
+  }
+  75% {
+    color: white;
+    filter: drop-shadow(0px 2px 3px rgba(210, 115, 138, 100%));
+  }
+  100% {
+    color: rgb(210, 115, 138);
+    filter: drop-shadow(0px 4px 10px rgba(210, 115, 138, 0%));
+  }
+}

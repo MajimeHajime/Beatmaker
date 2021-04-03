@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/beatmaker.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="beat-maker">
+        <h1 style="text-align: center; animation: wavy 2s infinite;">beatmaker</h1>
+        <div class="kick-track tracks">
+            <div class="control">
+                <p>kick</p>
+                <button data-track="0" class="mute kick-volume">mute</button>
+                <select name="kick-select" id="kick-select">
+                    <option value="./audio/kick-newwave.wav">newwave kick</option>
+                    <option value="./audio/kick-heavy.wav">heavy kick</option>
+                    <option value="./audio/kick-tape.wav">tape kick</option>
+                </select>
+            </div>
+            <div class="sequence">
+                <div class="pad kick-pad b0"></div>
+                <div class="pad kick-pad b1"></div>
+                <div class="pad kick-pad b2"></div>
+                <div class="pad kick-pad b3"></div>
+                <div class="pad kick-pad b4"></div>
+                <div class="pad kick-pad b5"></div>
+                <div class="pad kick-pad b6"></div>
+                <div class="pad kick-pad b7"></div>
+            </div>
+        </div>
+        <div class="snare-track tracks">
+            <div class="control">
+                <p>snare</p>
+                <button data-track="0" class="mute snare-volume">mute</button>
+                <select name="snare-select" id="snare-select">
+                    <option value="./audio/snare-modular.wav">modular snare</option>
+                    <option value="./audio/snare-acoustic01.wav">acoustic snare</option>
+                    <option value="./audio/snare-dist01.wav">dist01 snare</option>
+                </select>
+            </div>
+            <div class="sequence">
+                <div class="pad snare-pad b0"></div>
+                <div class="pad snare-pad b1"></div>
+                <div class="pad snare-pad b2"></div>
+                <div class="pad snare-pad b3"></div>
+                <div class="pad snare-pad b4"></div>
+                <div class="pad snare-pad b5"></div>
+                <div class="pad snare-pad b6"></div>
+                <div class="pad snare-pad b7"></div>
+            </div>
+        </div>
+        <div class="hihat-track tracks">
+            <div class="control">
+                <p>hihat</p>
+                <button data-track="0" class="mute hihat-volume">mute</button>
+                <select name="hihat-select" id="hihat-select">
+                    <option value="./audio/hihat-digital.wav">digital hihat</option>
+                    <option value="./audio/hihat-dist01.wav">dist01 hihat</option>
+                    <option value="./audio/hihat-acoustic01.wav">acoustic hihat</option>
+                </select>
+            </div>
+            <div class="sequence">
+                <div class="pad hihat-pad b0"></div>
+                <div class="pad hihat-pad b1"></div>
+                <div class="pad hihat-pad b2"></div>
+                <div class="pad hihat-pad b3"></div>
+                <div class="pad hihat-pad b4"></div>
+                <div class="pad hihat-pad b5"></div>
+                <div class="pad hihat-pad b6"></div>
+                <div class="pad hihat-pad b7"></div>
+            </div>
+        </div>
+        <div class="tracks">
+            <div class="controlB">
+                <p>
+                    yeahsobasicallyidkwatimdoing
+                </p>
+                <button class="start-button">
+                    start
+                </button>
+            </div>
+            <div class="sliderCont sequence">
+                <p>beatsperminute : </p>
+                <p id="tempo-value">150</p>
+                <input type="range" min="10" max="300" value="150" class="slider" id="slider-bpm">
+            </div>
+        </div>
+    </div>
+
+    <audio id="kick-sound" src="./audio/kick-newwave.wav"></audio>
+    <audio id="snare-sound" src="./audio/snare-modular.wav"></audio>
+    <audio id="hihat-sound" src="./audio/hihat-digital.wav"></audio>
+
+
+    <script src="./js/beatmaker.js"></script>
+    
+</body>
+</html>
